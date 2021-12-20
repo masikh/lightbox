@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+    command: --quiet
+
+  # LIGHTBOX SERVER
+  lightbox:
+    build: .
+    command: python3 /code/run.py
+    environment:
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+    ports:
+      - "7890:7890"
+    depends_on:
+      - mongodb_container
+    restart: always

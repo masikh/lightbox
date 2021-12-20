@@ -1,0 +1,16 @@
+bcrypt
+fuzzywuzzy
+flasgger
+flask
+flask_login
+pyttsx3
+pybase64
+pycrypto
+pychromecast==10.1.1
+python-Levenshtein
+pymongo
+pyyaml
+requests
+tinytuya
+tuya-iot-py-sdk
+wsgiserver

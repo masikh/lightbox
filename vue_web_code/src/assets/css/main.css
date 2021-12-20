@@ -1,0 +1,84 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    background-image: url('~@/assets/background.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
+
+div, body{
+    margin: 0;
+    padding: 0;
+    font-family: exo, sans-serif;
+}
+
+.hero-no-margin {
+    margin: 0;
+}
+
+.column-padding {
+    padding: 5px;
+}
+
+.content-color {
+    background-color: aquamarine;
+}
+
+.navbar-color {
+    background-color: ghostwhite;
+}
+
+.footer-color {
+    background-color: ghostwhite;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.outer-section {
+    margin: 125px;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.section {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(255,255,255,1.0);
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.save-update-buttons {
+    display: flex;
+}
+
+.save-update-buttons > * {
+    margin: 5px;
+}
+
